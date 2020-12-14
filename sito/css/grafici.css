@@ -1,0 +1,82 @@
+.grafico{
+    width: 46%;
+    padding: 2%;
+}
+
+.g_note{
+    font-size: 85%;
+}
+
+#g_ciambella{
+    float: right;
+}
+
+#ciambella1-1{
+margin-left: 20%;
+}
+
+#g_ciambella > p, h3 {
+    text-align: center;
+    padding: 0.5%;
+}
+
+#map_1-1 {
+    padding-top: 2%;
+}
+
+#map1_5_g_note{
+    width: 50%;
+}
+#map1_6_g_note{
+    width: 50%;
+}
+
+/***************************************************************************************/
+
+@media screen and (min-width: 860px) and (max-width: 1200px) {
+    .grafico{
+        margin-left: 10%;
+    }
+    #g_ciambella{
+        float: left;
+        margin-left: 5%;
+    }
+    
+    #g_ciambella > p, h3 {
+        margin-right: -50%;
+    }
+
+    #map1_5_g_note{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .g_note{
+        font-size: 85%;
+    }
+    
+  }
+
+@media screen and (max-width: 860px) {
+
+    #g_ciambella{
+        float: left;
+    }
+    
+    #g_ciambella > p, h3 {
+        margin-right: -65%;
+    }
+
+    #ciambella1-1{
+        margin-left: 10%;
+    }
+
+    #map1_5_g_note{
+        width: 80%;
+    }
+
+    .g_note{
+        font-size: 85%;
+    }
+  
+  }

@@ -1,0 +1,49 @@
+/* inizio gestione polaroid */
+
+div.polaroid {
+    width: 82%;
+    margin: 1%;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 1em;
+    margin-left: 9%;
+  }
+  
+  div.container {
+    width: 85%;
+    text-align: left;
+    margin-left: 7.5%;
+  }
+
+  .container > h2{
+    font-size: 110%;
+  }
+
+  #intro {
+    margin-top: 3em;
+  }
+
+  /* fine gestione polaroid */
+
+  /***************************************************************************************/ 
+
+  @media screen and (max-width: 860px) {
+  
+    div.container {
+      width: 94%;
+      margin: 2%;
+      text-align: left;
+    }
+  
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 860px) {
+    
+    div.polaroid{
+      width: 90%;
+      margin-left: 5%;
+    }
+  
+  }
+  

@@ -1,0 +1,163 @@
+/* initial general set */
+
+body {
+    padding: 0; margin: 0;
+    font-family: Arial, Verdana, Geneva, sans-serif;
+    color: #000000;
+    font-size: 115%;
+    background-color:#ADD8E6 /*#d5f4e6*/;
+}
+/*
+p {
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+ul {
+    font-size: 1.4em;
+}
+*/ 
+a {
+    color: #003366;
+}
+
+/* inizio header */
+
+header {
+    font-family: "Times New Roman", Times, serif;
+    font-variant: small-caps;
+    width: 100%;
+    height: 10%;
+    background-color: #EB9B3F;
+    box-shadow: 0px 1px 7px #444444;
+}
+
+header *{
+    display: inline-block;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4em;
+    font-weight: normal;
+    color: #000000;
+    letter-spacing: 0.05em;
+    margin-left: 22%;
+    line-height: 0.5;    
+}
+
+header a {  
+    text-decoration: none;
+    margin: 1%;
+}
+
+#logo{
+    max-width: 80%;
+}
+
+/* fine header */
+
+/* inizio footer */
+
+footer {
+    clear:left;
+    margin-top: 4em;
+    margin-bottom: -2%;
+    padding: 0;
+    width: 100%;
+    color: #121254;
+    background-color: #bc7c32;
+    line-break: anywhere;
+}
+
+#info {
+    min-height: 6em;
+    width: 90%;
+    margin: auto;
+}
+
+#info p {
+    font-size: 0.9em;
+    display: inline-block;
+    margin-left: 19%;
+    width: 30%;
+}
+
+#info a {
+    color:#2e2ed1;
+}
+
+/* fine footer */
+
+/* si riferisce alla piccola tabella che appare quando passo sopra le regioni nella mappa*/
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    padding: 2px;
+    font-size: 10px;
+    background: #636363;
+    border: 1px;
+    border-radius: 8px;
+    pointer-events: none;
+    color: #fff;
+  }
+
+/*************************************************************************************************************/
+
+@media screen and (min-width: 601px) and (max-width: 860px) {
+    header h1 {
+        font-size: 3em;
+        line-height: 1;
+    }
+    
+    header a {
+        width: 100%;
+    }
+    
+    #contenuto {
+        margin-top: 5%;
+    }
+
+    footer {
+        margin-bottom: -4%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 2.5em;
+        margin-left: 2%;
+        line-height: 1;
+    }
+    
+    header a {
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .polaroid {
+        margin-top: 3%;
+    }
+
+/* inizio footer */
+
+    footer {
+        margin-bottom: -4%;
+    }
+
+    #info {
+        width: 100%;
+    }
+    
+    #info p {
+        margin-left: 5%;
+        width: 40%;
+    }
+
+/* fine footer */
+}
