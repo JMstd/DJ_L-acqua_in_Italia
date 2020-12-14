@@ -14,7 +14,7 @@ function Mappa1_6() {
             "translate(" + margin.left + "," + margin.top + ")");
 
     // Parse the Data
-    d3.csv("../Tabelle_pulite/Tavola-1-6-json.csv", function (data) {
+    d3.csv("data/Tabelle_pulite/Tavola-1-6-json.csv", function (data) {
 
         // List of subgroups = header of the csv files
         var subgroups = data.columns.slice(1)

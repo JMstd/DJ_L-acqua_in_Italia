@@ -18,7 +18,7 @@ function grafico_1_4() {
             "translate(" + margin.left + "," + margin.top + ")");
 
     // d3.csv(file,preprocessing(),processing())
-    d3.csv("../Tabelle_pulite/Tavola-1-4-json.csv", function (data) {
+    d3.csv("data/Tabelle_pulite/Tavola-1-4-json.csv", function (data) {
 
         //******************* questa parte mi serve per popolare my_dati che conterrà tutti i valori ***********************
         // mi controlla il contenuto riga per riga di dati e passa a my_dati solo quello che mi serve
