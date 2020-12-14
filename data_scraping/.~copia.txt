@@ -1,0 +1,48 @@
+from tabula import read_pdf
+# [top,left,bottom,width]
+box = [52.03, 42.42, 160, 204.21]
+# fattore di conversione
+fc = 28.28
+         
+for i in range(0, len(box)):
+    box[i] /= 10
+    box[i] *= fc
+    
+df = read_pdf("dati/Utilizzo-e-qualità-della-risorsa-idrica-in-Italia.pdf", pages='22',area=[box],output_format="json", stream=True)
+
+df
+
+#questo me lo stampa in una maniera più facilmente leggibile ad un umano
+
+******************************************************************************************************
+table = []
+for i in range(0,len(df[0]['data'])):
+    if df[0]['data']:
+        riga = ""
+        for j in range(0, len(df[0]['data'][i])):
+            valore = df[0]['data'][i][j]['text']
+            if valore != " " or "":
+                riga += valore + "; "
+    table.append(riga)
+    
+nome_tab = re.findall("[A-Za-z]+\s[0-9]+\.[0-9]+", table[0])  #contiene il nome tabella sul pdf es. Tavola 1.1
+fonte_tab = table[len(df[0]['data'])-1]    #contiene la fonte della tab (es istat)
+
+if nome_tab == []:
+    nome_tab = "X"
+table 
+
+
+*******************************************************************************************************
+
+
+import json
+with open(nome_tab+".json", "w") as outfile:
+    json.dump(tab, outfile, indent=3)
+    
+# il nome della tabella corrispode a quello sul pdf (Tavola *.*)
+# esporto tutto su openrefine e divido i nomi dai valori e poi uso la RE di seguito --> (["   "]+|["  "]+|[" "]+)
+# il risultato è la mia tabella corretta
+
+
+******************************************************************************************************
