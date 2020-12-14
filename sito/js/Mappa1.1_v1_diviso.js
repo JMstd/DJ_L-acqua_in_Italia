@@ -33,7 +33,7 @@ function Mappa1_1() {
   // Load external data and boot
   d3.queue()
     .defer(d3.json, "https://raw.githubusercontent.com/aquablue8200/maps/master/ItalyReg2016-WGS84.geojson")
-    .defer(d3.csv, "../Tabelle_pulite/Tavola-1-1-json.csv")
+    .defer(d3.csv, "data/Tabelle_pulite/Tavola-1-1-json.csv")
     .await(ready);
 
   function ready(error, map, data) {

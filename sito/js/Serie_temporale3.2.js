@@ -15,7 +15,7 @@ function Serie_temporale() {
             "translate(" + margin.left + "," + margin.top + ")");
 
     //Read the data
-    d3.csv("../Tabelle_pulite/Tavola-3-2-json.csv",
+    d3.csv("data/Tabelle_pulite/Tavola-3-2-json.csv",
 
         // When reading the csv, I must format variables:
         // prendo solo le prime due colonne (quelle che mi interessano e di cui ci sono dati sufficienti)
