@@ -3,7 +3,6 @@ function ciambella1_1() {
     var n_tab = [];
 
     d3.csv("data/Tabelle_pulite/Tavola-1-1-json.csv", function (data) {
-        console.log(data)
 
         var colonne = ["Sorgente", " Pozzo", " Corso d’acqua superficiale", "Lago naturale o bacino artificiale"/*, "Acque marine o salmastre"*/];
 
